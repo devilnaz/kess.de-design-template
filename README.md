@@ -1,20 +1,20 @@
 ## Информация по проекту
 
 ### Установить библиотеки и инструменты для инициализации проекта
-`npm install`
+```npm install```
 
 ### Запуск локального сервера и горячую перезагрузку
-`npm run dev`
+```npm run dev```
 
 ### Шрифты и картинки
-Изображения добавлять по пути: `/public/images/[designName]/`
-Иконки добавлять: `/public/images/[designName]/icons/`
-Шрифты добавлять: `/public/fonts/[fontsname]/`
+Изображения добавлять по пути: `/public/images/[designName]/`  
+Иконки добавлять: `/public/images/[designName]/icons/`  
+Шрифты добавлять: `/public/fonts/[fontsname]/`  
 
 ### Использование шрифтов и картинок в коде
 Примечание: при указании пути не нужно добавлять public/
 1) Изображения(Пример):
-`<img src="/images/designName/default.jpg">`
+```<img src="/images/designName/default.jpg">```
 2) Шрифты(Пример):
 ```
 @font-face {
