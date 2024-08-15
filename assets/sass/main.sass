@@ -1,0 +1,20 @@
+// mixins
+@import './common/_media'
+// fonts
+@import 'fonts/gothamxnarrow'
+// others
+@import '_variables'
+  
+.designName
+  .main-structure
+    background-color: var(--bg-color)
+    padding-bottom: 20px
+    &__column_center
+      max-width: calc(var(--main-width) + var(--gap-main) * 2)
+      margin: 0 auto
+    
+  .outer-gap-elem
+    padding: var(--gap-main)
+    @include media('md')
+      padding: var(--gap-main-mobile)
+      
