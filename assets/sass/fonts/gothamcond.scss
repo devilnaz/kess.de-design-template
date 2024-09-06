@@ -1,0 +1,24 @@
+$fonts: (
+  ('gothamcond_black.otf', 900),
+  ('gothamcond_blackitalic.otf', 900, italic),
+  ('gothamcond_bold.otf', 700),
+  ('gothamcond_bolditalic.otf', 700, italic),
+  ('gothamcond_book.otf', 400),
+  ('gothamcond_bookitalic.otf', 400, italic),
+  ('gothamcond_light.otf', 300),
+  ('gothamcond_lightitalic.otf', 300, italic),
+  ('gothamcond_medium.otf', 500),
+  ('gothamcond_mediumitalic.otf', 500, italic),
+  ('gothamcond_thin.otf', 100),
+  ('gothamcond_thinitalic.otf', 100, italic),
+  ('gothamcond_ultra.otf', 800),
+  ('gothamcond_ultraitalic.otf', 800, italic),
+  ('gothamcond_xlight.otf', 200),
+  ('gothamcond_xlightitalic.otf', 200, italic),
+  ('gothamcond_xblack.otf', 950),
+  ('gothamcond_xblackitalic.otf', 950, italic)
+);
+
+@each $url, $weight, $style, $format in $fonts {
+  @include font('GothamCond', '/fonts/gothamcond/#{$url}', $weight, $style, $format);
+}

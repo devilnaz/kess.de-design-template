@@ -3,10 +3,12 @@
 @import 'vendors/_font-face'
 // fonts
 @import 'fonts/gothamxnarrow'
+@import 'fonts/gothamcond'
+@import 'fonts/opensans-condensed'
 // others
 @import 'variables'
   
-.designName
+.design7
   .main-structure
     background-color: var(--bg-color)
     padding-bottom: 20px
@@ -18,3 +20,402 @@
     padding: var(--gap-main)
     @include media('md')
       padding: var(--gap-main-mobile)
+    &_header
+      padding-bottom: 6px
+      
+      
+.common
+  &_module-decorative
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: -17px
+      left: calc(-1 * var(--gap-main))
+      border-top: 49px solid var(--main-color)
+      border-left: 137px solid var(--main-color)
+      border-bottom: 72px solid transparent
+      z-index: -1
+  &_decorative-line
+    position: relative
+    border-top: 1px solid var(--light-border-color)
+    padding-bottom: calc(18px + 8px)
+    display: block
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 77px
+      height: 8px
+      background-color: var(--decorative-color)
+  &_module-title
+    font: 900 36px var(--second-font)
+    line-height: normal
+    color: var(--title-color)
+  &_module-title_dot
+    color: var(--main-color)
+  &_title_new
+    font: 700 26px/30px var(--third-font)
+    letter-spacing: -0.052em
+    color: var(--text-color)
+  &_label_new
+    font: 700 19px var(--third-font)
+    letter-spacing: -0.038em
+    color: var(--main-color)
+  &_title
+    font: 700 24px/26px var(--second-font)
+    color: var(--text-color)
+  &_label
+    font: 700 20px var(--second-font)
+    color: var(--main-color)
+    
+.header
+  &__top
+    padding-bottom: 11px
+    display: flex
+    align-items: center
+  &__logo-inner
+    width: 97px
+    height: 48px
+    background-color: var(--main-color)
+    display: flex
+    justify-content: center
+    align-items: center
+  &__logo-img
+    width: 86px
+  &__top-navigate
+    margin-left: auto
+  .top-navigate
+    display: flex
+    &__item
+      margin-left: 18px
+    &__link
+      font: 700 20px/30px var(--third-font)
+      color: var(--nav-link-color)
+  &__menu-button
+    padding-left: 36px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      height: 28px
+      width: 1px
+      background-color: var(--nav-link-color)
+      left: 23px
+  .menu-button
+    width: 22px
+    height: 22px
+    padding: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+    box-sizing: content-box
+    &__img-burger
+      width: 17.35px
+      height: 15px
+  &__bottom
+    height: 35px
+    border-top: 1px solid var(--border-color)
+    padding-top: 4px
+  .bottom-navigate
+    display: flex
+    &__item
+      margin-right: 10px
+    &__link
+      font: 700 20px/30px var(--third-font)
+      color: var(--nav-link-color)
+      
+.module-home
+  &__title
+    margin-bottom: 14px
+  &__container
+    display: flex
+    gap: var(--gap-main)
+  &__box-big
+    max-width: 448px
+    width: 100%
+  .box-big
+    &__img
+      aspect-ratio: 1 / 1
+    &__label
+      margin-top: 3px
+      font-family: var(--second-font)
+      font-size: 21px
+      letter-spacing: 0
+  .box-small
+    &__img
+      aspect-ratio: 1 / 1
+    &__card
+      margin-top: var(--gap-main)
+      display: flex
+      gap: var(--gap-main)
+      &:first-child
+        margin-top: 0
+    &__title
+      font-size: 21px
+      line-height: 24px
+      letter-spacing: -0.063em
+
+.module1
+  &__title
+    margin-bottom: var(--gap-main)
+  &__container
+    position: relative
+  &__ground
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 52.162%
+    background-image: url('/images/design7/module1-ground.png')
+    background-repeat: repeat-x
+  &__img
+    aspect-ratio: 496 / 185
+  &__block-info
+    position: absolute
+    bottom: 47px
+    left: 36px
+  .block-info
+    &__label-wrapper
+      display: block
+    &__label
+      font: 700 18px var(--font)
+      color: #FFFFFF
+      padding: 3px 3px 3px 5px
+      background-color: var(--secondary-color)
+      display: inline-block
+    &__title
+      margin-left: 1px
+      margin-top: 6px
+    &__title-link
+      font: 900 46px/44px var(--font)
+      color: #F8F6F5
+      
+.module2
+  &__title
+    margin-bottom: var(--gap-main)
+  &__container
+    display: flex
+    gap: var(--gap-main)
+  &__box
+    max-width: 488px
+    width: 100%
+  &__box-label
+    margin-bottom: 2.5px
+  &__box-title
+    font-size: 28px
+    line-height: 28px
+  
+.module3
+  &__title
+    margin-bottom: var(--gap-main)
+  &__container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: var(--gap-main)
+  &__box-label
+    margin-top: 3px
+  
+.module4
+  &__title
+    margin-bottom: var(--gap-main)
+  &__container
+    display: flex
+    gap: var(--gap-main)
+  &__box-big
+    max-width: 656px
+    width: 100%
+  &__box-small
+    max-width: 320px
+    width: 100%
+
+  .box-big
+    &__img
+      aspect-ratio: 1 / 1
+    &__label
+      margin-top: 7px
+      font-family: var(--font)
+      font-size: 18px
+    &__title
+      margin-top: 1px
+      font-size: 36px
+      line-height: 34px
+
+  .box-small
+    &__card
+      margin-top: var(--gap-main)
+      &:first-child
+        margin-top: 0
+    &__img
+      aspect-ratio: 16 / 9
+    &__label
+      margin-top: 3px
+    &__title
+      margin-top: 4px
+      line-height: 24px
+
+
+.design7
+  .ticker
+    .ticker
+      &__main-title
+        padding-bottom: 29px
+        font-size: 40px
+        line-height: 29px
+        font-weight: 950
+
+      &__inner
+        display: flex
+        justify-content: space-between
+        @include media('md')
+          justify-content: initial
+          flex-direction: column-reverse
+          
+      &__column
+        &_first
+          max-width: 648px
+          width: 100%
+          @include media('md')
+            padding-top: var(--gap-main-mobile)
+            max-width: none
+        &_second
+          max-width: 300px
+          margin-left: var(--gap-main)
+          margin-top: 5px
+          @include media('md')
+            max-width: none
+            margin-top: 0
+            margin-left: 0
+            display: flex
+            align-items: center
+            padding-bottom: var(--gap-main-mobile)
+      &__list
+        padding-left: 36px
+      &__item
+        padding-top: 35px
+        position: relative
+        @include media('md')
+          padding-top: 37px
+        &:nth-last-child(3n + 2)
+          @include media('md')
+            padding-top: 30px
+        &::after
+          content: ''
+          position: absolute
+          top: 0
+          right: 100%
+          transform: translateX(-28px)
+          width: 1px
+          height: 100%
+          background-color: #B4B4B4
+          z-index: 5
+          @include media('md')
+            transform: translateX(-19px)
+      &__item:first-child
+        padding-top: 0
+        &::after
+          height: calc(100% - 15px)
+          bottom: 0
+          top: auto
+      &__time
+        color: #4D4D4D
+        font-family: var(--font)
+        font-size: 24px
+        font-weight: 500
+        line-height: 1
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          height: 15px
+          width: 15px
+          top: 0
+          transform: translateY(5px)
+          right: calc(100% + 21px)
+          background-color: var(--secondary-color)
+          border-radius: 50%
+          z-index: 10
+          @include media('md')
+            right: calc(100% + 12px)
+      &__label-strip
+        margin-top: 7px
+        padding: 2px 3px 3px 5px
+        display: inline-block
+        font-size: 18px
+        line-height: 21.6px
+        padding: 0 3px 1px
+        font-family: 'Gotham XNarrow'
+        font-size: 16px
+        font-weight: 700
+        background-color: var(--secondary-color)
+        color: #ffffff
+        &::before
+          content: none
+        @include media('md')
+          margin-top: 4px
+          padding: 1px 6px 1px 4px
+          font-size: 16px
+          line-height: normal
+        @include media('xs')
+          margin-top: 5px
+          padding: 1px 6px 2px 5px
+      &__title
+        margin-top: 8px
+        @include media('md')
+          margin-right: 23px
+        @include media('xs')
+          margin-top: 7px
+        a
+          font: 700 28px/1 var(--font)
+          color: #4D4D4D
+          @include media('md')
+            font-size: 22px
+            line-height: 24px
+          @include media('xs')
+            line-height: 26px
+      &__wrap-img
+        max-width: 300px
+        width: 100%
+        @include media('md')
+          max-width: 250px
+      &__img
+        @include media('md')
+          aspect-ratio: 1 / 1
+          object-fit: cover
+      &__wrap-info
+        margin-top: 5px
+        @include media('md')
+          width: 100%
+          max-width: 502px
+          margin-top: 0
+          min-height: 220px
+          border: 1px solid var(--border-color)
+          margin-left: -17px
+          background-color: #ffffff
+          padding: 0 30px
+          display: flex
+          flex-direction: column-reverse
+          justify-content: center
+      &__card-title
+        @include media('md')
+          margin-top: 8px
+          margin-bottom: 2px
+        a
+          font: 700 24px/26px var(--second-font)
+          color: var(--text-color)
+          @include media('md')
+            line-height: normal
+            font-family: var(--font)
+      &__card-category
+        font: 400 18px var(--font)
+        color: #9D9D9D
+        margin-top: 6px
+        @include media('md')
+          display: none
+      &__card-label
+        display: none
+        font-weight: 700
+        padding-top: calc(15px + 5px)
+        @include media('md')
+          display: block

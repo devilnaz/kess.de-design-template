@@ -1,0 +1,8 @@
+$fonts: (
+  ('OpenSans_Condensed-Bold.ttf', 700, normal, 'truetype'),
+  ('OpenSans_Condensed-Regular.ttf', 400, normal, 'truetype')
+);
+
+@each $url, $weight, $style, $format in $fonts {
+  @include font('OpenSans Condensed', '/fonts/opensans-condensed/#{$url}', $weight, $style, $format);
+}
