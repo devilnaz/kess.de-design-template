@@ -1,9 +1,22 @@
-// EXAMPLE
-// @font-face {
-//   font-family: 'Gotham XNarrow';
-//   font-style: normal;
-//   font-weight: 400;
-//   src:
-//     url('/fonts/gothamxnarrow/GothamXNarrow-Book.woff2') format('woff2'),
-//     url('/fonts/gothamxnarrow/GothamXNarrow-Book.woff') format('woff');
-// }
+$fonts: (
+  ('gothamxnarrow_black.otf', 900),
+  ('gothamxnarrow_blackitalic.otf', 900, italic),
+  ('gothamxnarrow_bold.otf', 700),
+  ('gothamxnarrow_bolditalic.otf', 700, italic),
+  ('gothamxnarrow_light.otf', 300),
+  ('gothamxnarrow_lightitalic.otf', 300, italic),
+  ('gothamxnarrow_medium.otf', 500),
+  ('gothamxnarrow_mediumitalic.otf', 500, italic),
+  ('gothamxnarrow_thin.otf', 100),
+  ('gothamxnarrow_thinitalic.otf', 100, italic),
+  ('gothamxnarrow_ultra.otf', 800),
+  ('gothamxnarrow_ultraitalic.otf', 800, italic),
+  ('gothamxnarrow_xlight.otf', 200),
+  ('gothamxnarrow_xlightitalic.otf', 200, italic),
+  ('GothamXNarrow-Book.woff', 400, normal, 'woff'),
+  ('GothamXNarrow-Book.woff2', 400, normal, 'woff2')
+);
+
+@each $url, $weight, $style, $format in $fonts {
+  @include font('Gotham XNarrow', '/fonts/gothamxnarrow/#{$url}', $weight, $style, $format);
+}
