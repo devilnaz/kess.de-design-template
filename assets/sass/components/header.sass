@@ -1,0 +1,63 @@
+.design6
+  .header
+    background-color: var(--main-color)
+    font-family: 'Gotham XNarrow'
+    font-weight: 500
+    font-size: 18px
+    line-height: normal
+    a
+      color: var(--nav-link-color)
+    &__top
+      height: 79px
+      padding-left: var(--gap-main)
+      padding-right: var(--gap-main)
+      display: flex
+      align-items: flex-end
+    &__logo
+      margin-bottom: 24px
+      width: 92.36px
+      height: 25px
+    &__categories
+      margin-bottom: 24px
+      margin-left: auto
+    .navigate
+      &__link
+        margin-left: 22px
+    &__menu
+      margin-bottom: calc(24px - 5px)
+      margin-left: 10px
+      margin-right: -5px
+    .menu-button
+      height: 22px
+      padding-right: 5px
+      padding-left: 5px
+      padding-top: 5px
+      padding-bottom: 5px
+      display: block
+      box-sizing: content-box
+      &__img
+        width: 25px
+        height: 8px
+    &__bottom
+      height: 50px
+      border-top: 1px solid var(--border-color)
+      padding-left: var(--gap-main)
+      padding-right: var(--gap-main)
+      box-sizing: content-box
+    .bottom-navigate
+      height: 100%
+      display: flex
+      align-items: flex-end
+      justify-content: flex-end
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        background-color: var(--decorative-color)
+        height: 8px
+        width: 77px
+      &__link
+        margin-bottom: 20px
+        margin-left: 22px

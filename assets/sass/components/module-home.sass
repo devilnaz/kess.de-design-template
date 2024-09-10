@@ -1,0 +1,39 @@
+.design6
+  .module-home
+    display: flex
+    column-gap: var(--gap-main)
+
+    &__container
+      &:first-child
+        max-width: 656px
+        width: 100%
+      &:last-child
+        max-width: 320px
+        width: 100%
+    &__main-img
+      aspect-ratio: 16 / 9
+    &__main-info-block
+      margin-left: 1px
+    &__main-label
+      margin-top: 8px
+    &__main-title
+      margin-top: 2px
+    &__main-desc
+      margin-top: 5px
+      margin-left: 2px
+
+    &__box
+      &:last-child
+        margin-top: 17px
+        border-top: 1px solid var(--light-border-color)
+        padding-top: 17px
+
+    &__box-img
+      aspect-ratio: 16 / 9
+
+    &__box-label
+      margin-top: 4px
+
+    &__box-title
+      margin-top: -2px
+      font: 700 24px/25px var(--second-font)
