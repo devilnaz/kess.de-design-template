@@ -1,0 +1,24 @@
+$fonts: (
+  ('OpenSans-Bold.ttf', 700, normal, 'truetype'),
+  ('OpenSans-BoldItalic.ttf', 700, italic, 'truetype'),
+  ('OpenSans-ExtraBold.ttf', 800, normal, 'truetype'),
+  ('OpenSans-ExtraBoldItalic.ttf', 800, italic, 'truetype'),
+  ('OpenSans-Light.ttf', 300, normal, 'truetype'),
+  ('OpenSans-LightItalic.ttf', 300, italic, 'truetype'),
+  ('OpenSans-Medium.ttf', 500, normal, 'truetype'),
+  ('OpenSans-MediumItalic.ttf', 500, italic, 'truetype'),
+  ('OpenSans-Regular.ttf', 400, normal, 'truetype'),
+  ('OpenSans-Italic.ttf', 400, italic, 'truetype'),
+  ('OpenSans-SemiBold.ttf', 600, normal, 'truetype'),
+  ('OpenSans-SemiBoldItalic.ttf', 600, italic, 'truetype')
+);
+
+@each $url, $weight, $style, $format in $fonts {
+  @include font(
+    'OpenSans',
+    '/fonts/opensans/#{$url}',
+    $weight,
+    $style,
+    $format
+  );
+}
